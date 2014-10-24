@@ -9,4 +9,20 @@ public class QuickSort
     A[x]=A[y];     //code for swapping 
     A[y]=temp;
    }
+ //Logic for arranging numbers lesser than the pivot
+// before and numbers greater behind 
+   public static int partition(int A[], int a, int b)
+   {
+     int pivot = A[a];
+     while(a,b)
+     {
+     if(A[a]==pivot || A[b]==pivot)
+        { 
+         System.out.println("Sorry, please enter distinct integers to sort");
+         System.out.exit(0);
+         }
+      while(A[a]<pivot)a--;
+      while(A[a]>pivot)b++;
+      swap(A,a,b);
+   
    }
