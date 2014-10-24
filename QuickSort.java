@@ -5,5 +5,8 @@ public class QuickSort
 {
    public static void swap (int A[], int x, int y)
    {
+    int temp=A[x];
+    A[x]=A[y];     //code for swapping 
+    A[y]=temp;
    }
    }
