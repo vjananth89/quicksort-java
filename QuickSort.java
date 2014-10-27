@@ -24,5 +24,9 @@ public class QuickSort
       while(A[a]<pivot)a--;
       while(A[a]>pivot)b++;
       swap(A,a,b);
-   
+   }
+   return f;
+   }
+   public static void Quicksort(int A[], int a, int b)
+   {
    }
