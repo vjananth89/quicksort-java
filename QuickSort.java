@@ -29,4 +29,7 @@ public class QuickSort
    }
    public static void Quicksort(int A[], int a, int b)
    {
+     if(a<b) return;
+     int pivot_index = partition(A,a,b);
+     Quicksort(A,b,pivot_index);
    }
