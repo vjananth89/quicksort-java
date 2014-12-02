@@ -14,7 +14,7 @@ public class QuickSort
    public static int partition(int A[], int a, int b)
    {
      int pivot = A[a];
-     while(a,b)
+     while(a<b)
      {
      if(A[a]==pivot || A[b]==pivot)
         { 
@@ -25,11 +25,25 @@ public class QuickSort
       while(A[a]>pivot)b++;
       swap(A,a,b);
    }
-   return f;
+   return a;
    }
    public static void Quicksort(int A[], int a, int b)
    {
-     if(a<b) return;
+     if(a>=b) return;
      int pivot_index = partition(A,a,b);
      Quicksort(A,b,pivot_index);
    }
+   
+   public static void main(String argv[])
+   {
+      int A[] = new int[argv.length];
+      for (int i=0 ; i < argv.length ; i++)
+         A[i] = Integer.parseInt(argv[i]);
+
+      Quicksort(A, 0, argv.length-1);
+
+      for (int i=0 ; i < argv.length ; i++) System.out.print(A[i] + " ");
+      System.out.println();
+   }
+}
+
